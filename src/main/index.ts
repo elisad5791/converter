@@ -7,7 +7,12 @@ import ffmpegStatic from 'ffmpeg-static'
 import path from 'node:path'
 import { ConvertOptions, ConvertResult } from '../types'
 
-ffmpeg.setFfmpegPath(ffmpegStatic)
+if (is.dev) {
+  ffmpeg.setFfmpegPath(ffmpegStatic)
+} else {
+  const ffmpegPath = path.join(process.resourcesPath, 'ffmpeg');
+  ffmpeg.setFfmpegPath(ffmpegPath);
+}
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
