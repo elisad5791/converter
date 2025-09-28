@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-### Построение дистрибутива
+### Сборка
 
 ```bash
 # For windows
