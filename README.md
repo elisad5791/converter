@@ -1,34 +1,31 @@
-# converter
+# Converter
 
-An Electron application with Vue and TypeScript
+Простой видеоконвертер  
+Преобразование видео между форматами mp4, avi, mov, webm
 
-## Recommended IDE Setup
+Electron / Vue3 / Vuetify / TypeScript
 
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-
-## Project Setup
-
-### Install
+### Установка
 
 ```bash
-$ npm install
+npm install
 ```
 
-### Development
+### Запуск в режиме разработки
 
 ```bash
-$ npm run dev
+npm run dev
 ```
 
-### Build
+### Построение дистрибутива
 
 ```bash
 # For windows
-$ npm run build:win
+npm run build:win
 
 # For macOS
-$ npm run build:mac
+npm run build:mac
 
 # For Linux
-$ npm run build:linux
+npm run build:linux
 ```
